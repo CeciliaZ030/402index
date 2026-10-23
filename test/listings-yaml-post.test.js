@@ -4,7 +4,7 @@ import db from '../src/db.js'
 import { loadListings } from '../src/listings.js'
 
 test('curated YAML upgrades a pending POST listing without losing its probe body', () => {
-  const url = 'https://api-staging.aomi.dev/v1/task/build'
+  const url = 'https://api.aomi.dev/v1/task/build'
   db.prepare(`
     INSERT INTO services (id, name, url, protocol, source, status, http_method)
     VALUES (?, ?, ?, 'x402', 'self-registered', 'pending', 'GET')

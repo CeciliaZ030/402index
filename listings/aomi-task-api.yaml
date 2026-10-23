@@ -1,6 +1,6 @@
-name: "Aomi Task API (Arc Mainnet staging)"
-description: "Prepare an agent task for 0.01 USDC, then buy its completed result in a separate purchase priced at 3% of external spend. This is Aomi's staging endpoint using real Arc Mainnet USDC; production availability is not claimed."
-url: "https://api-staging.aomi.dev/v1/task/build"
+name: "Aomi Task API (Arc Mainnet)"
+description: "Prepare an agent task for 0.01 USDC, then buy its completed result in a separate purchase priced at 3% of simulated gross outgoing USDC. This production endpoint uses Arc Mainnet USDC; status polling is free and Aomi does not sign or execute the task."
+url: "https://api.aomi.dev/v1/task/build"
 protocol: x402
 http_method: POST
 probe_body:
