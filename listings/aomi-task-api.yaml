@@ -1,5 +1,5 @@
-name: "Aomi Task API (Arc Mainnet)"
-description: "Prepare an agent task for 0.01 USDC, then buy its completed result in a separate purchase priced at 3% of simulated gross outgoing USDC. This production endpoint uses Arc Mainnet USDC; status polling is free and Aomi does not sign or execute the task."
+name: "Aomi Labs Task API (Arc Mainnet)"
+description: "Aomi Labs builds the execution harness for onchain finance. Its production Task API lets an agent inspect a simulated onchain action before buying the exact unsigned transaction bundle. Preparation costs 0.01 USDC over x402 on Arc Mainnet; status and the signed preview are free. Retrieval is a separate purchase priced at 3% of simulated gross outgoing USDC, free for zero outflow. The buyer's wallet alone signs and broadcasts."
 url: "https://api.aomi.dev/v1/task/build"
 protocol: x402
 http_method: POST
@@ -11,4 +11,4 @@ price_usd: 0.01
 payment_asset: "USDC"
 payment_network: "Arc Mainnet (eip155:5042)"
 category: "tools"
-provider: "Aomi"
+provider: "Aomi Labs"
